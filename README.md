@@ -1,52 +1,53 @@
-# Stop The Squirrels (Ustavite veverice)
+# Stop The Squirrels
 
-### Dinamiko igre:
-* sezona lešnikov je, uporabite košaro, da naberete lešnike, preden jih veverice pograbijo.
+### Dynamics:
+* it's hazelnut season, use the basket to collect hazelnuts, before the squirrels snatch them.
 
-**Pozor: v košaro ne dovolite veveric.**
+**Caution: don't let squirrels enter the basket.**
 
-### Mehaniko igre:
-* manveri s košaro, prikradanje veverice, pad lešnikov, obiranje lešnikov in konec igre.
+### Mechanics:
+* basket manouvers, sneaking of squirrels, collecting hazelnuts and end of game.
 
-### Elemente igre:
-* [slika: ozadje](https://icons8.com/photos/photo/bark-of-an-old-tree--5a1e30588b6588000131a119) (dodano 09.10.2021)
-* [slika: košara](https://www.flaticon.com/premium-icon/picnic-basket_1135718?term=basket&page=1&position=2&page=1&position=2&related_id=1135718&origin=search) (dodano 09.10.2021)
-* [slika: veverica](https://www.flaticon.com/free-icon/squirrel_1864534?term=squirrel&page=1&position=1&page=1&position=1&related_id=1864534&origin=search) (dodano 09.10.2021)
-* [slika: lešnik](https://www.flaticon.com/free-icon/hazelnut_3439365?term=hazelnut&page=1&position=19&page=1&position=19&related_id=3439365&origin=tag) (dodano 09.10.2021)
-* pisavo: rezultat (število lešnikov v košari, dodano 09.10.2021)
-* [zvok: lešnik](https://freesound.org/s/344518/) (dodano 09.10.2021) in
-* [zvok: konec](https://freesound.org/s/519986/) (dodano 09.10.2021).
+### Assets:
+* [image: background](https://icons8.com/photos/photo/bark-of-an-old-tree--5a1e30588b6588000131a119) (added 09.10.2021)
+* [image: basket](https://www.flaticon.com/premium-icon/picnic-basket_1135718?term=basket&page=1&position=2&page=1&position=2&related_id=1135718&origin=search) (added 09.10.2021)
+* [image: squirrel](https://www.flaticon.com/free-icon/squirrel_1864534?term=squirrel&page=1&position=1&page=1&position=1&related_id=1864534&origin=search) (added 09.10.2021)
+* [image: hazelnut](https://www.flaticon.com/free-icon/hazelnut_3439365?term=hazelnut&page=1&position=19&page=1&position=19&related_id=3439365&origin=tag) (added 09.10.2021)
+* font: end result (number of hazelnuts in the basket, added 09.10.2021)
+* [sound: hazelnut](https://freesound.org/s/344518/) (added 09.10.2021) and
+* [sound: end](https://freesound.org/s/519986/) (added 09.10.2021).
 
-**Opozorilo: Sredstva so bila na določene datume dodana in na voljo na spletu na navedenih povezavah. Žal mi je, če pri prihodnjem dostopu do njih pride do nevšečnosti.**
 
-### Struktura projekta:
-###### StopTheSquirrels (implementacija v strukturirano programiranje):
-* StopTheSquirrels.java (glavni razred) vsebuje celotno implementacijo igre.
-* DesktopLauncher.java (razred zaslona) vsebuje osnovne nastavitve okna igre.
+**Disclaimer: the assets were available on the respective links at the day of adding them. I apologize if they are unavailable at this time.**
 
-###### StopTheSquirrelsV2 (implementacija v objektno usmerjeno programiranje):
-* StopTheSquirrelsV2.java (glavni razred) vstopna točka v igri.
-* DesktopLauncherV2.java (razred zaslona) vsebuje osnovne nastavitve okna igre.
-* Assets.java - razred za upodabljanje in odstranjevanje elementi igre.
-* Background.java - razred za risanje ozadja.
-* Basket.java - razred za risanje košare in premikanje košare.
-* DynamicGameObject.java - abstraktni razred, ki ga podedujejo razredi: košara, veverica in lešnik.
-* End.java - razred označuje, da je igre konec.
-* GameObject.java - abstraktni razred, iz katerega podedujejo vsi razredi, razen glavnega razreda in razreda zaganjalnika. 
-* Hazelnut.java - razred za inicializacijo in risanje lešnikov.
-* Score.java - razred za posodobitev in risanje rezultata.
-* Squirrel.java - razred za inicializacijo in risanje veveric.
+### Project structure:
+###### StopTheSquirrels (structured programming):
+* StopTheSquirrels.java (main class) contains the game implementation.
+* DesktopLauncher.java (game window class) containts primary game window settings.
 
-### Koristne povezave:
-* [Brezplačno spreminjanje velikosti slike.](https://resizeimage.net/)
-* [Brezplačna pretvorba datotek na spletu.](https://www.freeconvert.com/)
+###### StopTheSquirrelsV2 (object oriented programming):
+* StopTheSquirrelsV2.java (main class) game entry point.
+* DesktopLauncherV2.java (game window class) contains primary game window settings.
+* Assets.java - class that enables using, rendering and removal of game elements.
+* Background.java - class used for background rendering.
+* Basket.java - class for basket rendering and control.
+* DynamicGameObject.java - abstract class, inherited by the basket, squirrel and hazelnut class.
+* End.java - class to indicate end of game.
+* GameObject.java - abstract class, from which every class (except main and launcher) inherits.
+* Hazelnut.java - class for hazelnut initialization and rendering.
+* Score.java - class for result update and rendering.
+* Squirrel.java - class for squirrel initialization and rendering.
 
-### Faze razvoja iger:
-![osnutek](images/draft.png?raw=true "Osnutek igre.")
-###### Slika 1: Osnutek igre.
+### Useful links:
+* [Free image resizing.](https://resizeimage.net/)
+* [Free file converter.](https://www.freeconvert.com/)
 
-![pregledSP](images/previewSP.PNG?raw=true "Pregled implementacij v strukturirano programiranje.")
-###### Slika 2: Pregled implementacij v strukturirano programiranje.
+### Development phases:
+![screenshot](images/draft.png?raw=true "Game draft.")
+###### Image 1: Game draft.
 
-![pregledOOP](images/previewOOP.PNG?raw=true "Pregled implementacij v objektno usmerjenem programiranju.")
-###### Slika 3: Pregled implementacij v objektno usmerjenem programiranju.
+![previewSP](images/previewSP.PNG?raw=true "Preview of the structured programming implementation.")
+###### Image 2: Preview of the structured programming implementation.
+
+![previewOOP](images/previewOOP.PNG?raw=true "Preview of the object oriented programming implementation.")
+###### Image 3: Preview of the object oriented programming implementation.
